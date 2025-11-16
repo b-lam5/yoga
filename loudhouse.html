@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 
+      ======================================================================
+      SEO & METADATA
+      ======================================================================
+    -->
+    <title>Private Yoga Teacher [Your Name] | [Your City or Specialty e.g., Vinyasa]</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="[Placeholder: A brief 1-2 sentence description of your private yoga business, highlighting your unique approach and services.]">
+    <meta name="keywords" content="[Placeholder: e.g., yoga teacher, private yoga, yoga [your city], vinyasa, restorative yoga, [your name]]">
+    <link rel="canonical" href="[Placeholder: Your full website URL, e.g., https://www.youryogasite.com]">
+
+    <!-- Open Graph / Facebook / LinkedIn Meta Tags -->
+    <meta property="og:title" content="Private Yoga Teacher [Your Name] | [Your City]">
+    <meta property="og:description" content="[Placeholder: A brief 1-2 sentence description.]">
+    <meta property="og:image" content="[Placeholder: A direct URL to a high-quality image, e.g., your portrait or hero image. Should be at least 1200x630px.]">
+    <meta property="og:url" content="[Placeholder: Your full website URL]">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Private Yoga Teacher [Your Name] | [Your City]">
+    <meta name="twitter:description" content="[Placeholder: A brief 1-2 sentence description.]">
+    <meta name="twitter:image" content="[Placeholder: A direct URL to the same high-quality image.]">
+
+    <!-- 
+      ======================================================================
+      STRUCTURED DATA (SCHEMA.ORG)
+      This helps Google understand your business and services.
+      ======================================================================
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["YogaStudio", "LocalBusiness"],
+      "name": "[Your Name] Yoga",
+      "description": "[Placeholder: Your business description, same as meta description.]",
+      "image": "[Placeholder: A direct URL to your portrait or a good business image.]",
+      "url": "[Placeholder: Your full website URL]",
+      "priceRange": "$$", // You can adjust this e.g., $, $$, $$$
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "[Placeholder: Your City, e.g., 'Perth']",
+        "addressRegion": "[Placeholder: Your State/Region, e.g., 'WA']",
+        "postalCode": "[Placeholder: Your Postcode]",
+        "addressCountry": "[Placeholder: Your Country, e.g., 'AU']"
+      },
+      "telephone": "[Placeholder: Your business phone number, if you have one]",
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Private 1-on-1 Yoga Session (Single)"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "100",
+            "priceCurrency": "AUD" 
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "5-Class Pack (Private 1-on-1)"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "450",
+            "priceCurrency": "AUD"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "10-Class Pack (Private 1-on-1)"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "850",
+            "priceCurrency": "AUD"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom Yoga Sessions (Small Groups, Corporate, Workshops)"
+          }
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "QuoteAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "[Placeholder: Your full URL to the quote form/contact page, e.g., https://www.youryogasite.com#contact]"
+          },
+          "name": "Request a Quote"
+        },
+        {
+          "@type": "CommunicateAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "[Placeholder: Your full URL to the contact form/page, e.g., https://www.youryogasite.com#contact]",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          },
+          "name": "Ask a Question"
+        }
+      ],
+      "event": [
+        {
+          "@type": "Event",
+          "name": "Free Yoga in the Park",
+          "startDate": "[Placeholder: e.g., 2026-05-30T09:00-08:00]",
+          "endDate": "[Placeholder: e.g., 2026-05-30T10:00-08:00]",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "location": {
+            "@type": "Place",
+            "name": "[Placeholder: e.g., Hyde Park]",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "[Placeholder: Your City, e.g., 'Perth']",
+              "addressRegion": "[Placeholder: Your State/Region, e.g., 'WA']",
+              "postalCode": "[Placeholder: Your Postcode]",
+              "addressCountry": "[Placeholder: Your Country, e.g., 'AU']"
+            }
+          },
+          "image": "[Placeholder: A direct URL to an image for this event]",
+          "description": "A free, community-focused yoga class open to all levels. A perfect chance to practice in nature and meet our community.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "AUD",
+            "availability": "https://schema.org/InStock",
+            "url": "[Placeholder: Your full URL to the event page or sign-up, e.g., https://www.youryogasite.com#events]"
+          },
+          "organizer": {
+            "@type": "Person",
+            "name": "[Your Name]"
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Configure Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'brand-cream': '#FBF9F6', // Warm Off-White
+                        'brand-charcoal': '#4A4A4A', // Dark Charcoal Grey
+                        'brand-terracotta': '#B88A74', // Terracotta
+                        'brand-brown': '#8A5A44', // Muted Brown
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-cream text-brand-charcoal font-sans antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="w-full py-6 px-4 sm:px-8 absolute top-0 z-10">
+        <div class="container mx-auto max-w-6xl flex justify-between items-center">
+            <!-- Logo/Name -->
+            <a href="#" class="font-serif text-2xl font-medium text-brand-charcoal">
+                [Your Name]
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-brand-charcoal hover:text-brand-terracotta transition-colors">About</a>
+                <a href="#offerings" class="text-brand-charcoal hover:text-brand-terracotta transition-colors">Offerings</a>
+                <a href="#events" class="text-brand-charcoal hover:text-brand-terracotta transition-colors">Events</a>
+                <a href="#contact" class="text-brand-charcoal hover:text-brand-terracotta transition-colors">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-brand-charcoal">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-brand-cream z-50 flex flex-col items-center justify-center space-y-8">
+        <button id="mobile-menu-close-btn" class="absolute top-8 right-6 p-2 rounded-md text-brand-charcoal">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <a href="#about" class="mobile-nav-link text-3xl font-serif text-brand-charcoal hover:text-brand-terracotta transition-colors">About</a>
+        <a href="#offerings" class="mobile-nav-link text-3xl font-serif text-brand-charcoal hover:text-brand-terracotta transition-colors">Offerings</a>
+        <a href="#events" class="mobile-nav-link text-3xl font-serif text-brand-charcoal hover:text-brand-terracotta transition-colors">Events</a>
+        <a href="#contact" class="mobile-nav-link text-3xl font-serif text-brand-charcoal hover:text-brand-terracotta transition-colors">Contact</a>
+    </div>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="w-full min-h-screen flex items-center justify-center text-center px-4 pt-24 pb-12">
+            <div class="container mx-auto max-w-3xl">
+                <h1 class="font-serif text-6xl md:text-8xl font-medium text-brand-charcoal mb-4">[Your Name]</h1>
+                <p class="font-sans text-xl md:text-2xl text-brand-charcoal mb-8">
+                    Personalized Yoga for Every Body.
+                </p>
+                <a href="#offerings" class="inline-block bg-brand-terracotta text-white font-medium py-3 px-8 rounded-full text-lg shadow-md hover:bg-brand-brown transition-colors">
+                    See My Offerings
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="w-full py-20 md:py-32 bg-white">
+            <div class="container mx-auto max-w-4xl px-4 text-center">
+                <h2 class="font-serif text-4xl md:text-5xl font-medium mb-6">Welcome, I'm [Your Name]</h2>
+                <img src="https://placehold.co/300x300/B88A74/FBF9F6?text=Warm+Portrait&font=playfair+display" 
+                     alt="A friendly portrait of [Your Name]" 
+                     class="w-48 h-48 md:w-60 md:h-60 rounded-full mx-auto mb-8 object-cover shadow-lg"
+                     onerror="this.src='https://placehold.co/300/B88A74/FBF9F6?text=Warm+Portrait&font=playfair+display'">
+                
+                <div class="max-w-2xl mx-auto text-left md:text-center space-y-4 text-lg text-brand-charcoal/90">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                        My philosophy is simple: yoga is for everyone. I specialize in creating personalized, accessible practices that meet you exactly where you are, helping you build strength, find balance, and reconnect with yourself.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+         <!-- Offerings Section -->
+        <section id="offerings" class="w-full py-20 md:py-32">
+            <div class="container mx-auto max-w-5xl px-4">
+                <h2 class="font-serif text-4xl md:text-5xl font-medium text-center mb-16">My Offerings</h2>
+
+                <!-- Updated Grid Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                    
+                    <!-- Main Offering: Private Sessions (takes 2/3 width on desktop) -->
+                    <div class="md:col-span-2 bg-white p-8 md:p-10 rounded-lg shadow-sm border border-gray-100">
+                        <h3 class="font-serif text-3xl md:text-4xl font-medium mb-6">Private 1-on-1 Sessions</h3>
+                        <p class="text-brand-charcoal/90 mb-8 text-lg">
+                            A practice designed just for you. Whether you're a beginner or looking to deepen your practice, we'll work together to meet your personal goals in a supportive, private setting.
+                        </p>
+                        
+                        <!-- Pricing Tiers -->
+                        <div class="space-y-4 mb-8">
+                            <div class="flex justify-between items-center border-b border-gray-200 pb-3">
+                                <span class="text-lg text-brand-charcoal">Single Session</span>
+                                <span class="text-xl font-medium text-brand-charcoal">$100</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-gray-200 pb-3">
+                                <span class="text-lg text-brand-charcoal">5-Class Pack</span>
+                                <span class="text-xl font-medium text-brand-charcoal">$450</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-gray-200 pb-3">
+                                <span class="text-lg text-brand-charcoal">10-Class Pack</span>
+                                <span class="text-xl font-medium text-brand-charcoal">$850</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#contact" class="inline-block bg-brand-terracotta text-white font-medium py-3 px-6 rounded-full text-base shadow-md hover:bg-brand-brown transition-colors">
+                            Book a Private Session
+                        </a>
+                    </div>
+                    
+                    <!-- Secondary Offering: Custom Quotes (takes 1/3 width on desktop) -->
+                    <div class="bg-transparent p-8 md:p-10 rounded-lg border-2 border-brand-terracotta/50">
+                        <h3 class="font-serif text-3xl md:text-4xl font-medium mb-6">Custom Quotes</h3>
+                        <p class="text-brand-charcoal/90 mb-6">
+                            Have another idea? I'm happy to provide quotes for:
+                        </p>
+                        <ul class="list-disc list-inside text-brand-charcoal/90 space-y-2 mb-8">
+                            <li>Client-formed small groups</li>
+                            <li>Corporate wellness events</li>
+                            <li>Special workshops</li>
+                            <li>Or any other idea you have!</li>
+                        </ul>
+                        <a href="#contact" class="inline-block bg-transparent border-2 border-brand-terracotta text-brand-terracotta font-medium py-3 px-6 rounded-full text-base hover:bg-brand-terracotta hover:text-white transition-colors">
+                            Request a Custom Quote
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section id="events" class="w-full py-20 md:py-32 bg-white">
+            <div class="container mx-auto max-w-5xl px-4">
+                <h2 class="font-serif text-4xl md:text-5xl font-medium text-center mb-16">Upcoming Events</h2>
+                
+                <!-- Event Card -->
+                <div class="max-w-3xl mx-auto bg-transparent rounded-lg border-2 border-brand-terracotta/50 overflow-hidden md:flex">
+                    <!-- Event Image Placeholder -->
+                    <div class="md:w-1/3">
+                        <img src="https://placehold.co/600x400/FBF9F6/B88A74?text=Yoga+in+the+Park&font=playfair+display" 
+                             alt="People doing yoga in a park" 
+                             class="h-48 w-full object-cover md:h-full"
+                             onerror="this.src='https://placehold.co/600x400/FBF9F6/B88A74?text=Yoga+in+the+Park&font=playfair+display'">
+                    </div>
+                    
+                    <!-- Event Details -->
+                    <div class="md:w-2/3 p-8 md:p-10">
+                        <h3 class="font-serif text-3xl md:text-4xl font-medium mb-4">Free Yoga in the Park</h3>
+                        <div class="space-y-2 text-brand-charcoal/90 mb-6">
+                            <p class="text-lg"><strong>Date:</strong> Saturday, May 30th at 9:00 AM</p>
+                            <p class="text-lg"><strong>Location:</strong> [Placeholder: e.g., Hyde Park (Near the fountain)]</p>
+                            <p class="text-lg"><strong>Cost:</strong> Free!</p>
+                        </div>
+                        <p class="text-lg text-brand-charcoal/90 mb-8">
+                            Join our wonderful community for a free, all-levels vinyasa class in the park. It's the perfect way to start your weekend. Bring your own mat and some water!
+                        </p>
+                        <a href="#" class="inline-block bg-brand-terracotta text-white font-medium py-3 px-6 rounded-full text-base shadow-md hover:bg-brand-brown transition-colors">
+                            Sign Up (Optional)
+                        </a>
+                    </div>
+                </div>
+                <!-- Add more event cards here as needed -->
+            </div>
+        </section>
+
+        <!-- Contact / CTA Section -->
+        <section id="contact" class="w-full py-20 md:py-32 bg-brand-cream">
+            <div class="container mx-auto max-w-3xl px-4 text-center">
+                <h2 class="font-serif text-4xl md:text-5xl font-medium mb-6">Let's Connect</h2>
+                <p class="text-lg text-brand-charcoal/90 mb-10 max-w-xl mx-auto">
+                    Have a question or ready to get a quote for a private session? I'd love to hear from you.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <!-- These would link to your forms -->
+                    <a href="#" class="inline-block bg-brand-terracotta text-white font-medium py-3 px-8 rounded-full text-lg shadow-md hover:bg-brand-brown transition-colors">
+                        Request a Quote
+                    </a>
+                    <a href="#" class="inline-block bg-transparent border-2 border-brand-terracotta text-brand-terracotta font-medium py-3 px-8 rounded-full text-lg hover:bg-brand-terracotta hover:text-white transition-colors">
+                        Ask a Question
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-12 px-4">
+        <div class="container mx-auto max-w-6xl text-center">
+            <p class="text-brand-charcoal/70">
+                &copy; <span id="current-year"></span> [Your Name] Yoga. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu & Current Year -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const closeBtn = document.getElementById('mobile-menu-close-btn');
+            const menu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('.mobile-nav-link');
+
+            // Open menu
+            menuBtn.addEventListener('click', function () {
+                menu.classList.remove('hidden');
+            });
+
+            // Close menu
+            closeBtn.addEventListener('click', function () {
+                menu.classList.add('hidden');
+            });
+
+            // Close menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    menu.classList.add('hidden');
+                });
+            });
+
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
+
+</body>
+</html>
